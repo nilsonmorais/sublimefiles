@@ -1,0 +1,27 @@
+<snippet>
+	<content><![CDATA[
+public function ${1:index}Action() {
+	\$this->_helper->viewRenderer->setNoRender(TRUE);
+	\$this->_helper->layout->disableLayout();
+	try {
+		echo (Zend_Json::encode(
+			array(
+				'Result'  => "OK",
+				'Message' => \$msg
+			)
+		));
+	} catch (Exception \$e) {
+		echo (Zend_Json::encode(
+			array(
+				'Result'  => "ERROR",
+				'Message' => \$e->getMessage()
+			)
+		));
+	}
+}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>zend-function-json</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

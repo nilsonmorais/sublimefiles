@@ -1,0 +1,13 @@
+<snippet>
+	<content><![CDATA[
+var code = event.which; 
+if (code==13) {
+    event.preventDefault();
+    ${1:someevent()};
+}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>enter</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

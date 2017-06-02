@@ -1,0 +1,13 @@
+<snippet>
+	<content><![CDATA[
+\$this->doSelect(array(
+	'mapper'      => '${1:Application_Model_DbTable_CtrAtivMapper}',
+	'primary_id'  => '${2:view_id}',
+	'received_id' => \$${2:view_id}
+));
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>doSelect</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

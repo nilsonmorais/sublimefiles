@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+Author: Nilson Morais <nilson.morais-filho at serpro.gov.br>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>nil</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

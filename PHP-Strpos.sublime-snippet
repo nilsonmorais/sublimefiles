@@ -1,0 +1,11 @@
+<snippet>
+	<content><![CDATA[
+if (strpos(trim(\$${1:somevar}), "${2:MatchString}") !== false) {
+	${3:TRUE}
+}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>strpos</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.php</scope>
+</snippet>

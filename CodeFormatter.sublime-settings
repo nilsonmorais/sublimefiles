@@ -1,0 +1,29 @@
+{
+    "codeformatter_php_options": {
+        "syntaxes": "php", // Syntax names which must process PHP formatter
+        "format_on_save": false, // Format on save
+        "smart_linebreak_after_curly": true, // Convert multistatement blocks into multiline blocks
+        // Enable specific transformations. Example: ["ConvertOpenTagWithEcho", "PrettyPrintDocBlocks"]
+        // You can list all available transformations from command palette: CodeFormatter: Show PHP Transformations
+        "passes": ["AlignDoubleArrow","AlignDoubleSlashComments","AlignPHPCode","AutoSemicolon","GeneratePHPDoc",
+            "OrganizeClass","OrderMethod","StripExtraCommaInArray","StripNewlineAfterClassOpen","StripNewlineAfterCurlyOpen",
+            "AlignEquals", "AlignGroupDoubleArrow"],
+        "exclude": ["AllmanStyleBraces"]
+    },
+    "codeformatter_js_options": {
+        "format_on_save": false, // Format on save
+        "syntaxes": "javascript",
+        "preserve_newlines": true,
+        "keep_array_indentation": true,
+        "keep_function_indentation": true
+    },
+    "codeformatter_css_options": {
+        "format_on_save": true, // Format on save
+    },
+    "codeformatter_html_options": {
+        "format_on_save": false, // Format on save
+        "syntaxes": "html",
+        "indent_with_tabs": true,
+        "reduce_empty_tags": true,
+    }
+}

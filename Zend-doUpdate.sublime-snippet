@@ -1,0 +1,14 @@
+<snippet>
+	<content><![CDATA[
+\$this->doUpdate(array(
+	'mapper'      => '${1:Application_Model_DbTable_CadAtivMapper}',
+	'primary_id'  => '${2:view_id}',
+	'received_id' => \$${2:view_id},
+	'formData'    => \$${3:formData}
+));
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>doUpdate</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

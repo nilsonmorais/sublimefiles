@@ -1,0 +1,14 @@
+[
+{ "keys": ["f11"], "command": "reindent" },
+{ "keys": ["ctrl+/"], "command": "toggle_comment", "args": { "block": false } },
+{ "keys": ["ctrl+shift+/"], "command": "toggle_comment", "args": { "block": true } },
+{
+        "keys": ["ctrl+shift+l"],
+        "command": "javatar",
+        "args": {
+            "action": {
+                "name": "main"
+            }
+        }
+    },
+]

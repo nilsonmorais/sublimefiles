@@ -1,0 +1,20 @@
+<snippet>
+	<content><![CDATA[
+{
+	name: "layout/Panel",
+	config: {
+		title: "Panel",
+		hideFooter: false,
+		titleClass: "panel-default",
+		panelMenuClass: "panel-menu",
+		menuWidgets: [],
+		bodyWidgets: [],
+		footerWidgets: [],
+	}
+},
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>dojo-layout-panel</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

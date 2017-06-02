@@ -1,0 +1,26 @@
+<snippet>
+	<content><![CDATA[
+dialogNew({
+	message: '${1:Digite o nome do novo registro: }',
+	title: '${2:Novo Registro}',
+	callback: function(result){
+		ajaxPost({
+			url: '${3}/new',
+			data: {
+				${4:ds}: ${4}
+			},
+			callback: function(data){
+				${5}
+			},
+			error: function(data){
+				errorDialog("Erro: "+data);
+			}
+		});
+	}
+});
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>dialogNew</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

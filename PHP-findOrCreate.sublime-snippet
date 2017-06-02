@@ -1,0 +1,17 @@
+<snippet>
+	<content><![CDATA[
+//Query Application_Model_DbTable_${1:CtdServ}Mapper: ${2:cod_serv} = ${3:1234}
+\$searchKey = \$this->findOrCreate(array(
+	'mapper'  => '${1:CtdServ}', 
+	'primary' => '${2:cod_serv}', 
+	'id'      => ${3:1234}, 
+	'data'    => array(
+		//Data to insert if search fails
+	)
+));
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>findOrCreate</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

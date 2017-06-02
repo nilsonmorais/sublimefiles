@@ -1,0 +1,18 @@
+<snippet>
+	<content><![CDATA[
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Version=1.0
+Type=Application
+Terminal=${1:true}
+Exec=${2}
+Name=${3}
+Comment=comment here
+Icon=icon path here
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>gnome-launcher</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

@@ -1,0 +1,16 @@
+{
+    "config": {
+        "block-indent": "   ",
+        "eof-newline": true,
+        "space-after-selector-delimiter": "",
+        "space-before-selector-delimiter": "",
+
+        "space-after-opening-brace": "\n",
+        "space-before-opening-brace": " ",
+        
+        "space-after-closing-brace": "\n\n",
+        "space-before-closing-brace": "\n",
+
+        "space-between-declarations": "\n",
+    }
+}

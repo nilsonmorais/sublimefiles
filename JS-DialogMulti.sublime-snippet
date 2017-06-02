@@ -1,0 +1,26 @@
+<snippet>
+	<content><![CDATA[
+dialogMulti({
+	title: '${1:Aviso}',
+	message: '${2:Mensagem}',
+	buttons: [{
+	    label: '${3:Ok}',
+	    hotkey: 13,
+	    cssClass: 'btn-primary',
+	    action: function(dialogRef){
+	        dialogRef.close();
+	    }
+    },{
+        label: 'Cancelar',
+	    cssClass: 'btn-default',
+        action: function(dialogRef){
+            dialogRef.close();
+        }
+	}]
+});
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>DialogMulti</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

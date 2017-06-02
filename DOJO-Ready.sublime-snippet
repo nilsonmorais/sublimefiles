@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+ready(function() \{
+    // Call the parser manually so it runs after our widget is defined, and page has finished loading
+    parser.parse();
+\});
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>dojoReady</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

@@ -1,0 +1,13 @@
+<snippet>
+	<content><![CDATA[
+join(
+array('${1:t}' => '${2:ctd_}' ),
+'${1:t}.${3:id = c.id}',
+'${1:t}.*'
+)
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>join</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

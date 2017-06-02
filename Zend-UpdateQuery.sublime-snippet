@@ -1,0 +1,18 @@
+<snippet>
+	<content><![CDATA[
+\$${1:tableModel} = new Application_Model_DbTable_${2:Cad}Mapper();
+\$selectRows  = \$${1:tableModel}->find(\$${3:id})->current();
+\$formData   = array(
+	'dt_alteracao' => new Zend_Db_Expr('now()')
+);
+if (empty(\$selectRows)) {
+	throw new Exception('Registro não encontrado');
+}
+\$where  = \$${1:tableModel}->getAdapter()->quoteInto('${3:id} = ?', \$${3:id});
+\$result = \$${1:tableModel}->update(\$formData, \$where);
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>ZendUpdateQuery</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

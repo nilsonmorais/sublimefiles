@@ -1,0 +1,34 @@
+<snippet>
+	<content><![CDATA[
+<?php
+
+class Application_Model_DbTable_${1}Mapper extends Zend_Db_Table_Abstract {
+	protected \$_name = '${2}';
+	protected \$_primary = '${3}';
+
+	public function __construct(\$config = array()){
+		parent::__construct(\$config);
+	}
+
+	public function getIdentifier(){
+		return \$this->_primary;
+	}
+
+	public function fetchRows(\$filter = array()){
+		\$select = \$this->select()
+		->from(
+			array('c' => '${2}'),
+			array('c.*')
+			);
+		if (array_key_exists('${3}',\$filter)){
+			\$select->where('${3} = ?',\$filter['${3}']);
+		}
+		return \$this->fetchRow(\$select)->toArray();
+	}
+}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>zendmodel</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

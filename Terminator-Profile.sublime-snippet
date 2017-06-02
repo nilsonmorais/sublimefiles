@@ -1,0 +1,39 @@
+<snippet>
+	<content><![CDATA[
+[[pv]]
+    [[[child0]]]
+      fullscreen = False
+      last_active_window = True
+      maximised = True
+      order = 0
+      parent = ""
+      position = 49:24
+      size = 851, 1416
+      title = nilson@serpro-1555202: ~
+      type = Window
+    [[[child1]]]
+      order = 0
+      parent = child0
+      position = 705
+      ratio = 0.5
+      type = VPaned
+    [[[terminal2]]]
+      command = ./run.sh
+      directory = /home/nilson/Documents/dev/processoverde/processo_verde
+      order = 0
+      parent = child1
+      profile = default
+      type = Terminal
+    [[[terminal3]]]
+      command = ./run.sh
+      directory = /home/nilson/Documents/dev/processoverde/alfresco_home
+      order = 1
+      parent = child1
+      profile = default
+      type = Terminal
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>terminator-profile</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>
