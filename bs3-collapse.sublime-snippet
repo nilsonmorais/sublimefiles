@@ -1,0 +1,38 @@
+<snippet>
+	<content><![CDATA[
+<div class="panel-group" id="${1:accordion-1}" role="tablist" aria-multiselectable="true">
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="${2:panel-1}">
+      <h4 class="panel-title">
+        <a role="button" data-toggle="collapse" data-parent="#${1:accordion-1}" href="#${3:collapse-1}" aria-expanded="true" aria-controls="${3:collapse-1}">
+          Panel title-1
+        </a>
+      </h4>
+    </div>
+    <div id="${3:collapse-1}" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="${2:panel-1}">
+      <div class="panel-body">
+        Panel body-1
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="${4:panel-2}">
+      <h4 class="panel-title">
+        <a role="button" data-toggle="collapse" data-parent="#${1:accordion-1}" href="#${5:collapse-2}" aria-expanded="true" aria-controls="${5:collapse-2}">
+          Panel title-1
+        </a>
+      </h4>
+    </div>
+    <div id="${5:collapse-2}" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="${4:panel-2}">
+      <div class="panel-body">
+        Panel body-1
+      </div>
+    </div>
+  </div>
+</div>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>collapse</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

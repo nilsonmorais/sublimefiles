@@ -1,0 +1,22 @@
+<snippet>
+	<content><![CDATA[
+<div class="panel panel-default">
+	<div class="panel-heading" role="tab" id="${1:clps-panel-1}">
+		<h4 class="panel-title">
+			<a role="button" data-toggle="collapse" data-parent="#${2:collapse1}" href="#${3:clps-1}" aria-expanded="true" aria-controls="${3:clps-1}">
+			Panel title-1
+			</a>
+		</h4>
+	</div>
+	<div id="${3:clps-1}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="${1:clps-panel-1}">
+		<div class="panel-body">
+			Panel body-1
+		</div>
+	</div>
+</div>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>collapse-panel</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>
